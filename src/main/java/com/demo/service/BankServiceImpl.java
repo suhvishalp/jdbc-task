@@ -16,19 +16,26 @@ public class BankServiceImpl implements BankService {
 	private RewardRepository rewardRepository;	
 	private EmailService emailService;
 	
-
+	//constructor to initialize the repositories 
 
 
 
 	public Long transfer(Long fromAccountNumber, Long toAccountNumber, int amount) throws SQLException {
 		
-		
+//		debit()
+//		credit()
 		
 		return null;  //return transactionId
 	}
 
 	public Long debit(int amount, Long accountNumber) throws SQLException {
 		
+		//find the account by the "findAccountByNumber"
+		//account.debit(amount)
+		//update the account in the db
+		
+		//create a new object TransactionDetails 
+			//add the transactiondetail record into the db
 		
 		return null; //return transactionId
 

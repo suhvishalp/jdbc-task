@@ -13,9 +13,13 @@ public interface BankService {
 	public Long debit(int amount,Long accountNumber) throws SQLException;
 	
 	public Long credit(int amount,Long accountNumber) throws SQLException;
+	
 	public void createNewAccount(Account account) throws SQLException;
+	
 	public void deActivateAccount(Long accountNumber)throws SQLException;
+	
 	public void activateAccount(Long accountNumber)throws SQLException;	
+	
 	public List<Account> getAllAccounts() throws SQLException;
 
 }
